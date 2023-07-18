@@ -1,5 +1,4 @@
 import React from "react";
-import { Document, Page } from "react-pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import samplePDF from "./Resume_Rahul_Chandak.pdf";

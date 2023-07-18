@@ -14,7 +14,7 @@ const ProfExpScreen = () => {
             <img
               className="wd-width-image"
               src="/images/TCS.png"
-              alt="Image 1"
+              alt="TCS"
             />
           </div>
           <div className="info-container">
@@ -33,7 +33,7 @@ const ProfExpScreen = () => {
             <img
               className="wd-width-image"
               src="/images/CK12.png"
-              alt="Image 2"
+              alt="CK12"
             />
           </div>
         </div>

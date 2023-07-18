@@ -30,7 +30,7 @@ const NavigationSidebar = () => {
     <div className="wd-padding-top">
       <div className="d-none d-xl-block list-group">
         <div className="wd-profile-pic">
-          <img src="images/ProfilePic.jpeg" alt="Image" className="wd-centered-image wd-rounded-circle"/>
+          <img src="images/ProfilePic.jpeg" alt="ProfilePic" className="wd-centered-image wd-rounded-circle"/>
         </div>
 
         <div className="wd-profile-pic">

@@ -5,7 +5,6 @@ import { ReactComponent as Location } from "feather-icons/dist/icons/map-pin.svg
 import { ReactComponent as Mail } from "feather-icons/dist/icons/mail.svg";
 import { ReactComponent as Call } from "feather-icons/dist/icons/phone-call.svg";
 import { ReactComponent as LinkedIn } from "feather-icons/dist/icons/linkedin.svg";
-import { Link } from "react-router-dom";
 
 const ContactScreen = () => {
   const [fullName, setFullName] = useState("");

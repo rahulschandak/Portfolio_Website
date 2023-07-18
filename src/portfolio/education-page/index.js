@@ -11,7 +11,7 @@ const EducationScreen = () => {
         <div className="card mb-4 wd-background-card wd-margin-right wd-padding-card-image">
           <img
             src="/images/NEU.png"
-            alt="University Image"
+            alt="University"
             className="card-img-top wd-card-size wd-card-bordered1 wd-padding-card-image"
           />
           <div className="card-body wd-card-bordered2">
@@ -49,7 +49,7 @@ const EducationScreen = () => {
         <div className="card mb-4 wd-background-card wd-padding-card-image">
           <img
             src="/images/MUM.png"
-            alt="University Image"
+            alt="University"
             className="card-img-top wd-card-size wd-card-bordered1 wd-padding-card-image"
           />
           <div className="card-body wd-card-bordered2">
