@@ -25,15 +25,30 @@ const ContactScreen = () => {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Perform the necessary actions with the form data
-    console.log("Full Name:", fullName);
-    console.log("Email:", email);
-    console.log("Subject:", subject);
-    console.log("Description:", description);
+    try {
+      // Make an API call to the backend server
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName,
+          email,
+          subject,
+          description,
+        }),
+      });
 
+      const data = await response.json();
+      console.log(data.message); // Message from the backend server
+    } catch (error) {
+      console.error("Error:", error);
+    }
+    
     // Reset the form fields
     setFullName("");
     setEmail("");
@@ -141,7 +156,6 @@ const ContactScreen = () => {
           </form>
         </div>
       </div>
-      );
     </div>
   );
 };

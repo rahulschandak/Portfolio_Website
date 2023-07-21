@@ -15,7 +15,7 @@ import { ReactComponent as Insta } from "feather-icons/dist/icons/instagram.svg"
 import { ReactComponent as Github } from "feather-icons/dist/icons/github.svg";
 import { ReactComponent as LinkedIn } from "feather-icons/dist/icons/linkedin.svg";
 
-const NavigationSidebar = () => {
+const NavigationSidebar2 = () => {
   const { pathname } = useLocation();
   const [active] = pathname.split("/");
   const links = [
@@ -29,13 +29,13 @@ const NavigationSidebar = () => {
   return (
     <div className="wd-padding-top">
       <div className="">
-        <div className="wd-profile-pic">
+        {/* <div className="wd-profile-pic">
           <img
             src="images/ProfilePic.jpeg"
             alt="ProfilePic"
             className="wd-centered-image wd-rounded-circle"
           />
-        </div>
+        </div> */}
 
         <div className="wd-profile-pic">
           <label> Rahul Chandak </label>
@@ -71,7 +71,7 @@ const NavigationSidebar = () => {
           </div>
         </div>
 
-        <div className="wd-background2">
+        <div className="wd-nav-bar-md-sm wd-background2">
           {links.map((link) => (
             <Link
               to={`/${link.name}`}
@@ -91,4 +91,4 @@ const NavigationSidebar = () => {
     </div>
   );
 };
-export default NavigationSidebar;
+export default NavigationSidebar2;

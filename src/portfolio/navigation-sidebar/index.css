@@ -48,3 +48,9 @@
   font-size: 20px;
   font-family: "Times New Roman", serif;
 }
+
+.wd-nav-bar-md-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

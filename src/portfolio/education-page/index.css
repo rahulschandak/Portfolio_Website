@@ -42,6 +42,11 @@
   margin: 2%;
 }
 
+.wd-background-card2 {
+  background-color: moccasin;
+  margin: 2%;
+}
+
 .wd-margin-right {
   margin-right: 4%;
 }
@@ -74,4 +79,14 @@
 
 .wd-transcript-link {
   text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .d-xsm-none {
+    display: none; 
+  }
+
+  .d-xsm-block {
+    display: block; 
+  }
 }
