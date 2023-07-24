@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,6 +26,17 @@ const NavigationSidebar2 = () => {
     { name: "Resume", icon: faFile },
     { name: "Contact", icon: faContactCard },
   ];
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth < 992 && window.innerWidth > 840);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="wd-padding-top">
       <div className="">
@@ -71,7 +82,7 @@ const NavigationSidebar2 = () => {
           </div>
         </div>
 
-        <div className="wd-nav-bar-md-sm wd-background2">
+        {isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
           {links.map((link) => (
             <Link
               to={`/${link.name}`}
@@ -83,7 +94,20 @@ const NavigationSidebar2 = () => {
               {link.name}
             </Link>
           ))}
-        </div>
+        </div>)}
+
+        {!isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
+          {links.map((link) => (
+            <Link
+              to={`/${link.name}`}
+              className={`list-group-item text-capitalize ${
+                active === link.name ? "active" : ""
+              }`}
+            >
+              <FontAwesomeIcon icon={link.icon} /> &nbsp;
+            </Link>
+          ))}
+        </div>)}
 
       </div>
 

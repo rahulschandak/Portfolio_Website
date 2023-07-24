@@ -12,17 +12,12 @@ import ContactScreen from "./contact-page";
 
 function Portfolio() {
   const [isMobile, setIsMobile] = useState(false);
-
   const handleResize = () => {
     setIsMobile(window.innerWidth < 992);
   };
-
   useEffect(() => {
-    // Add event listener to handle window resize
     window.addEventListener("resize", handleResize);
-
     handleResize();
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -32,9 +27,10 @@ function Portfolio() {
     <div className="full-height">
       <div className="row flex-grow-1">
         {/* Left Column XL, XXL */}
-        {!isMobile && (<div className="col-3 wd-background list-group ">
-          <NavigationSidebar />
-        </div>
+        {!isMobile && (
+          <div className="col-3 wd-background list-group ">
+            <NavigationSidebar />
+          </div>
         )}
 
         {/* Render NavigationSidebar2 only when isMobile is true */}
@@ -45,7 +41,13 @@ function Portfolio() {
         )}
 
         {/* Middle Column L, XL, XXL */}
-        <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-12 col-sm-12 wd-background2 full-height-content">
+        <div
+          className={
+            isMobile
+              ? "col-12 wd-background2 full-height-content wd-background2 full-height-content"
+              : "col-9 wd-background2 full-height-content wd-background2 full-height-content"
+          }
+        >
           <Routes>
             <Route path="/Home" element={<h1>Home</h1>} />
             <Route path="/About" element={<AboutScreen />} />
