@@ -55,6 +55,10 @@
   padding-right: 4%;
 }
 
+.wd-padding-bottom {
+  padding-bottom: 5%;
+}
+
 .image-info-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

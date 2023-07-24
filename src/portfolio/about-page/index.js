@@ -4,7 +4,7 @@ import "./index.css";
 
 const AboutScreen = () => {
   return (
-    <div className="container">
+    <div className="container wd-padding-bottom">
       <h1 className="about-heading wd-typewriter-label">Hello World!👋</h1>
 
       <div className="col-sm-0 col-md-0 col-lg-12 col-xl-12 col-xxl-12 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-xsm-none">
@@ -74,6 +74,7 @@ const AboutScreen = () => {
           </div>
         </div>
       </div>
+      
       <div className="col-sm-12 col-md-12 col-lg-0 col-xl-0 col-xxl-0 d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-xsm-block">
         {/* First Div */}
         <div className="wd-background3 wd-margin11">

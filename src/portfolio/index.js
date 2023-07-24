@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import NavigationSidebar from "./navigation-sidebar";
@@ -10,20 +11,41 @@ import ResumeScreen from "./resume-page";
 import ContactScreen from "./contact-page";
 
 function Portfolio() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 992);
+  };
+
+  useEffect(() => {
+    // Add event listener to handle window resize
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="wd-padding">
-      <div className="row">
+    <div className="full-height">
+      <div className="row flex-grow-1">
         {/* Left Column XL, XXL */}
-        <div class="col-3 wd-border wd-background d-none d-xl-block d-lg-block d-md-none d-sm-none list-group">
+        {!isMobile && (<div className="col-3 wd-background list-group ">
           <NavigationSidebar />
         </div>
+        )}
 
-        <div class="row d-none d-xl-none d-lg-none d-md-block d-sm-block list-group">
-          <NavigationSidebar2 />
-        </div>
+        {/* Render NavigationSidebar2 only when isMobile is true */}
+        {isMobile && (
+          <div className="col-12 list-group">
+            <NavigationSidebar2 />
+          </div>
+        )}
 
         {/* Middle Column L, XL, XXL */}
-        <div class="col-9 wd-border wd-background2">
+        <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-12 col-sm-12 wd-background2 full-height-content">
           <Routes>
             <Route path="/Home" element={<h1>Home</h1>} />
             <Route path="/About" element={<AboutScreen />} />
@@ -37,4 +59,5 @@ function Portfolio() {
     </div>
   );
 }
+
 export default Portfolio;

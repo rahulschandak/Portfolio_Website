@@ -57,7 +57,7 @@ const ContactScreen = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container wd-padding-bottom">
       <h1 className="contact-heading">Get in Touch</h1>
       <div className="wd-two-cols">
         <div className="wd-background6 wd-width1">

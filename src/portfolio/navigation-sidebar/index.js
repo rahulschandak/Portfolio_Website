@@ -28,7 +28,7 @@ const NavigationSidebar = () => {
   ];
   return (
     <div className="wd-padding-top">
-      <div className="">
+      <div className="wd-padding-bottom">
         <div className="wd-profile-pic">
           <img
             src="images/ProfilePic.jpeg"

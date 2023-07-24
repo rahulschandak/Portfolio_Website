@@ -16,14 +16,29 @@ code {
   border-style: solid;
 }
 
-.wd-padding {
-  /* padding: 10px; */
-}
-
 .wd-background {
   background-color: #f6dfba;
 }
 
 .wd-background2 {
   background-color: black;
+}
+
+.full-height-sidebar {
+  flex: 0 0 auto; /* Let the sidebar grow if there's extra space */
+}
+
+.full-height-content {
+  flex: 1 0 auto; /* Let the content grow to fill remaining space */
+  overflow-y: auto; /* If content overflows, allow scrolling */
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust the row height to 100% of the parent container */
+.row {
+  flex: 1 0 auto;
 }
