@@ -28,7 +28,7 @@ function Portfolio() {
       <div className="row flex-grow-1">
         {/* Left Column XL, XXL */}
         {!isMobile && (
-          <div className="col-3 wd-background list-group ">
+          <div className="col-3 wd-background list-group min-vh-100">
             <NavigationSidebar />
           </div>
         )}
@@ -44,8 +44,8 @@ function Portfolio() {
         <div
           className={
             isMobile
-              ? "col-12 wd-background2 full-height-content wd-background2 full-height-content"
-              : "col-9 wd-background2 full-height-content wd-background2 full-height-content"
+              ? "col-12 wd-background2 full-height-content"
+              : "col-9 wd-background2 full-height-content min-vh-100"
           }
         >
           <Routes>
