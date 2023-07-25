@@ -27,7 +27,7 @@ const NavigationSidebar = () => {
     { name: "Contact", icon: faContactCard },
   ];
   return (
-    <div className="wd-padding-top">
+    <div className="wd-padding-top wd-padding-left">
       <div className="wd-padding-bottom">
         <div className="wd-profile-pic">
           <img

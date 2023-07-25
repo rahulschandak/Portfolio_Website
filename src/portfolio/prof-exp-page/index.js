@@ -10,7 +10,7 @@ const ProfExpScreen = () => {
       </h1>
       <div className="image-info-container wd-margin-0">
         <div className="image-info-pair wd-background5 wd-margin-1">
-          <div className="wd-padding-right">
+          <div className="wd-padding-right wd-company-pic">
             <img
               className="wd-width-image"
               src="/images/TCS.png"
@@ -29,7 +29,7 @@ const ProfExpScreen = () => {
             Technical Assistant Intern<br />
             July 2018 - September 2018
           </div>
-          <div>
+          <div className="wd-company-pic">
             <img
               className="wd-width-image"
               src="/images/CK12.png"

@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const AboutScreen = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 992);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="container wd-padding-bottom">
       <h1 className="about-heading wd-typewriter-label">Hello World!👋</h1>
 
-      <div className="col-sm-0 col-md-0 col-lg-12 col-xl-12 col-xxl-12 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-xsm-none">
+      {!isMobile && (<div className="">
         <div className="about-info">
           <div className="wd-padding-right">
             {/* First Div */}
@@ -73,9 +84,9 @@ const AboutScreen = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div>)}
       
-      <div className="col-sm-12 col-md-12 col-lg-0 col-xl-0 col-xxl-0 d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-xsm-block">
+      {isMobile && (<div className="">
         {/* First Div */}
         <div className="wd-background3 wd-margin11">
           <ul className="wd-fancy-bullets">
@@ -137,7 +148,7 @@ const AboutScreen = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div>)}
     </div>
   );
 };
