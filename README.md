@@ -1,6 +1,6 @@
 Personal Portfolio of Rahul Chandak.
 
-An attempt to design my own fully responsive website from scratch as a means to learn web development technologies like React, Node, Bootstrap, etc. It is a work-in-progress project. 
+An attempt to design my own fully responsive website from scratch as a means to learn web development technologies like React, Node, Bootstrap, etc. It is a work-in-progress project and expect to see improvements in the near future. 
 
 Feel free to connect with me on LinkedIn for suggestions, to know how I designed the site, etc. 
 
