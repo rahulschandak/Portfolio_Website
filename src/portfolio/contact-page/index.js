@@ -173,7 +173,7 @@ const ContactScreen = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.linkedin.com/in/rahulschandak/
+                www.linkedin.com/in/rahulschandak/
               </a>
             </div>
           </div>
