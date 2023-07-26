@@ -50,6 +50,7 @@ function Portfolio() {
           }
         >
           <Routes>
+            <Route path="" element={<HomeScreen />} />
             <Route path="/Home" element={<HomeScreen />} />
             <Route path="/About" element={<AboutScreen />} />
             <Route path="/Education" element={<EducationScreen />} />

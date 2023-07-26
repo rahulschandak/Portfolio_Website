@@ -1,13 +1,14 @@
 import "./App.css";
 import Portfolio from "./portfolio";
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Routes>
+          {/* <Route path="/*" element={<Portfolio />} /> */}
           <Route path="/*" element={<Portfolio />} />
         </Routes>
       </div>
