@@ -4,7 +4,7 @@ import "./index.css";
 
 const ProfExpScreen = () => {
   return (
-    <div className="container wd-padding-bottom">
+    <div className="container wd-padding-bottom wd-background-black">
       <h1 className="prof-heading wd-typewriter-label">
         Professional Experience
       </h1>

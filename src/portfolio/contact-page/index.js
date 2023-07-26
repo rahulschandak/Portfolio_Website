@@ -37,7 +37,7 @@ const ContactScreen = () => {
   };
 
   return (
-    <div className="container wd-padding-bottom">
+    <div className="container wd-padding-bottom wd-background-black">
       <h1 className="contact-heading">Get in Touch</h1>
 
       {!isMobile && (

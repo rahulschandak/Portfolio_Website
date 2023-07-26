@@ -90,3 +90,7 @@
     display: block; 
   }
 }
+
+.wd-background-black {
+  background-color: black;
+}

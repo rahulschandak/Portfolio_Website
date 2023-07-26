@@ -28,7 +28,7 @@ const NavigationSidebar2 = () => {
   ];
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const handleResize = () => {
-    setIsSmallScreen(window.innerWidth < 992 && window.innerWidth > 840);
+    setIsSmallScreen(window.innerWidth < 992 && window.innerWidth > 783);
   };
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -38,7 +38,7 @@ const NavigationSidebar2 = () => {
     };
   }, []);
   return (
-    <div className="wd-padding-top">
+    <div className="wd-padding-top ">
       <div className="">
         {/* <div className="wd-profile-pic">
           <img

@@ -84,7 +84,6 @@ const NavigationSidebar = () => {
             </Link>
           ))}
         </div>
-
       </div>
 
       {/* <div className="d-block d-xl-none list-group"></div> */}

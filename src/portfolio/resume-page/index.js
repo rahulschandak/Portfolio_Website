@@ -9,7 +9,7 @@ const ResumeScreen = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container wd-background-black">
       <div>
         <h1 className="resume-heading">Resume</h1>
       </div>

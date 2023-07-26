@@ -17,11 +17,12 @@ code {
 }
 
 .wd-background {
-  background-color: #f6dfba;
+  background-color: moccasin;
+  /* border-right-style: solid; */
 }
 
 .wd-background2 {
-  background-color: black;
+  /* background-color: black; */
 }
 
 .full-height-sidebar {

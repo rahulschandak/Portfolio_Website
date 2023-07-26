@@ -15,7 +15,7 @@ const AboutScreen = () => {
     };
   }, []);
   return (
-    <div className="container wd-padding-bottom">
+    <div className="container wd-padding-bottom wd-background-black">
       <h1 className="about-heading wd-typewriter-label">Hello World!👋</h1>
 
       {!isMobile && (<div className="">

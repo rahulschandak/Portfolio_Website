@@ -4,7 +4,7 @@ import "./index.css";
 
 const EducationScreen = () => {
   return (
-    <div className="container">
+    <div className="container wd-background-black">
       <h1 className="education-heading">Education</h1>
 
       <div className="col-sm-0 col-md-0 col-lg-12 col-xl-12 col-xxl-12 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-xsm-none d-none">

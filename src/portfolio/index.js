@@ -9,6 +9,7 @@ import AboutScreen from "./about-page";
 import ProfExpScreen from "./prof-exp-page";
 import ResumeScreen from "./resume-page";
 import ContactScreen from "./contact-page";
+import HomeScreen from "./home-page";
 
 function Portfolio() {
   const [isMobile, setIsMobile] = useState(false);
@@ -49,7 +50,7 @@ function Portfolio() {
           }
         >
           <Routes>
-            <Route path="/Home" element={<h1>Home</h1>} />
+            <Route path="/Home" element={<HomeScreen />} />
             <Route path="/About" element={<AboutScreen />} />
             <Route path="/Education" element={<EducationScreen />} />
             <Route path="/Professional" element={<ProfExpScreen />} />
