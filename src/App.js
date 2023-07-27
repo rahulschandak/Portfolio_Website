@@ -8,7 +8,6 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          {/* <Route path="/*" element={<Portfolio />} /> */}
           <Route path="/*" element={<Portfolio />} />
         </Routes>
       </div>
