@@ -6,10 +6,10 @@ body {
 
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, moccasin 50%, white 50%);
+  background-image: linear-gradient(-60deg, black 50%, white 50%);
   bottom: 0;
   left: -50%;
-  opacity: 0.5;
+  opacity: 0.3;
   position: fixed;
   right: -50%;
   top: 0;
@@ -92,15 +92,19 @@ h4 {
   font-size: 30px;
   font-family: ui-serif;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .wd-span2 {
   font-size: 60px;
   font-family: ui-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .wd-span3 {
   font-size: 20px;
   font-family: ui-serif;
   text-transform: uppercase;
+  font-weight: bold;
 }

@@ -17,7 +17,7 @@ const HomeScreen = () => {
       <div className="d-flex align-items-center text-center" >
         <div className="wd-text-style">
           <span className="wd-span1">Hello</span> <br />
-          <span className="wd-span2">I am Rahul,</span> <br />
+          <span className="wd-span2">I am Rahul</span> <br />
           <span className="wd-span3">A Master's in Computer Science Student</span>
         </div>
         <img
