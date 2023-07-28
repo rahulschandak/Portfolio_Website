@@ -4,15 +4,9 @@ body {
   margin: 0;
 }
 
-.container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, black 50%, moccasin 50%);
+  background-image: linear-gradient(-60deg, moccasin 50%, white 50%);
   bottom: 0;
   left: -50%;
   opacity: 0.5;
@@ -31,21 +25,6 @@ body {
   animation-duration: 5s;
 }
 
-.content {
-  /* background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.25em;
-  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  left: 50%;
-  padding: 10vmin;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1; */
-  width: 70%;
-}
-
 h1 {
   font-family: monospace;
 }
@@ -57,11 +36,6 @@ h1 {
   100% {
     transform: translateX(25%);
   }
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
 }
 
 .container {
@@ -87,7 +61,8 @@ html, body {
   z-index: -1;
 }
 
-.content h1, h4 {
+.content h1,
+h4 {
   color: black;
 }
 
@@ -99,6 +74,33 @@ html, body {
 }
 
 .wd-home-pic {
-  width: 30%; /* Set the desired width for the image */
-  height: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 15px;
+}
+
+.wd-padding-right {
+  padding-right: 20px;
+}
+
+.wd-text-style {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.wd-span1 {
+  font-size: 30px;
+  font-family: ui-serif;
+  text-transform: uppercase;
+}
+
+.wd-span2 {
+  font-size: 60px;
+  font-family: ui-serif;
+}
+
+.wd-span3 {
+  font-size: 20px;
+  font-family: ui-serif;
+  text-transform: uppercase;
 }
