@@ -10,6 +10,9 @@ import {
   faBriefcase,
   faBook,
   faQuestionCircle,
+  faProjectDiagram,
+  faPen,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as Insta } from "feather-icons/dist/icons/instagram.svg";
 import { ReactComponent as Github } from "feather-icons/dist/icons/github.svg";
@@ -23,6 +26,8 @@ const NavigationSidebar = () => {
     { name: "About", icon: faQuestionCircle },
     { name: "Education", icon: faBook },
     { name: "Professional", icon: faBriefcase },
+    { name: "Projects", icon: faPen },
+    { name: "Skills", icon: faStar },
     { name: "Resume", icon: faFile },
     { name: "Contact", icon: faContactCard },
   ];

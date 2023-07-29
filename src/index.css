@@ -22,7 +22,7 @@ code {
 }
 
 .wd-background2 {
-  /* background-color: black; */
+  padding: 0;
 }
 
 .full-height-sidebar {
@@ -32,6 +32,7 @@ code {
 .full-height-content {
   flex: 1 0 auto; /* Let the content grow to fill remaining space */
   overflow-y: auto; /* If content overflows, allow scrolling */
+  padding: 0;
 }
 
 .full-height {
