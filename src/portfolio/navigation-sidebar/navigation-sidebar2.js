@@ -10,25 +10,17 @@ import {
   faBriefcase,
   faBook,
   faQuestionCircle,
+  faPen,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as Insta } from "feather-icons/dist/icons/instagram.svg";
 import { ReactComponent as Github } from "feather-icons/dist/icons/github.svg";
 import { ReactComponent as LinkedIn } from "feather-icons/dist/icons/linkedin.svg";
 
 const NavigationSidebar2 = () => {
-  const { pathname } = useLocation();
-  const [active] = pathname.split("/");
-  const links = [
-    { name: "Home", icon: faHouse },
-    { name: "About", icon: faQuestionCircle },
-    { name: "Education", icon: faBook },
-    { name: "Professional", icon: faBriefcase },
-    { name: "Resume", icon: faFile },
-    { name: "Contact", icon: faContactCard },
-  ];
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const handleResize = () => {
-    setIsSmallScreen(window.innerWidth < 992 && window.innerWidth > 783);
+    setIsMobile(window.innerWidth < 576);
   };
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -37,17 +29,22 @@ const NavigationSidebar2 = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const { pathname } = useLocation();
+  const [active] = pathname.split("/");
+  const links = [
+    { name: "Home", icon: faHouse },
+    { name: "About", icon: faQuestionCircle },
+    { name: "Education", icon: faBook },
+    { name: "Professional", icon: faBriefcase },
+    { name: "Projects", icon: faPen },
+    { name: "Skills", icon: faStar },
+    { name: "Resume", icon: faFile },
+    { name: "Contact", icon: faContactCard },
+  ];
   return (
     <div className="wd-padding-top ">
       <div className="">
-        {/* <div className="wd-profile-pic">
-          <img
-            src="images/ProfilePic.jpeg"
-            alt="ProfilePic"
-            className="wd-centered-image wd-rounded-circle"
-          />
-        </div> */}
-
         <div className="wd-profile-pic">
           <label> Rahul Chandak </label>
         </div>
@@ -82,36 +79,54 @@ const NavigationSidebar2 = () => {
           </div>
         </div>
 
-        {isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
-          {links.map((link) => (
-            <Link
-              to={`/${link.name}`}
-              className={`list-group-item text-capitalize ${
-                active === link.name ? "active" : ""
-              }`}
-            >
-              <FontAwesomeIcon icon={link.icon} /> &nbsp;
-              {link.name}
-            </Link>
-          ))}
-        </div>)}
+        {!isMobile && (
+          <div className="wd-nav-bar-md-sm wd-background2">
+            {links.map((link) => (
+              <Link
+                to={`/${link.name}`}
+                className={`list-group-item text-capitalize ${
+                  active === link.name ? "active" : ""
+                } d-flex align-items-center justify-content-center w-100`}
+              >
+                <FontAwesomeIcon icon={link.icon} />
+              </Link>
+            ))}
+          </div>
+        )}
 
-        {!isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
-          {links.map((link) => (
-            <Link
-              to={`/${link.name}`}
-              className={`list-group-item text-capitalize ${
-                active === link.name ? "active" : ""
-              }`}
-            >
-              <FontAwesomeIcon icon={link.icon} /> &nbsp;
-            </Link>
-          ))}
-        </div>)}
-
+        {isMobile && (
+          <div className="wd-background2">
+            <div className="row">
+              {links.slice(0, 4).map((link) => (
+                <div className="col wd-zero-padding" key={link.name}>
+                  <Link
+                    to={`/${link.name}`}
+                    className={`list-group-item text-capitalize ${
+                      active === link.name ? "active" : ""
+                    } d-flex align-items-center justify-content-center w-100`}
+                  >
+                    <FontAwesomeIcon icon={link.icon} />
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className="row">
+              {links.slice(4).map((link) => (
+                <div className="col wd-zero-padding" key={link.name}>
+                  <Link
+                    to={`/${link.name}`}
+                    className={`list-group-item text-capitalize ${
+                      active === link.name ? "active" : ""
+                    } d-flex align-items-center justify-content-center w-100`}
+                  >
+                    <FontAwesomeIcon icon={link.icon} />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
-
-      {/* <div className="d-block d-xl-none list-group"></div> */}
     </div>
   );
 };

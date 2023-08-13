@@ -10,6 +10,7 @@ import ProfExpScreen from "./prof-exp-page";
 import ResumeScreen from "./resume-page";
 import ContactScreen from "./contact-page";
 import HomeScreen from "./home-page";
+import SkillsScreen from "./skills-page";
 
 function Portfolio() {
   const [isMobile, setIsMobile] = useState(false);
@@ -42,7 +43,7 @@ function Portfolio() {
       <div className="row flex-grow-1">
         {/* Left Column XL, XXL */}
         {!isMobile && (
-          <div className="col-3 wd-background list-group min-vh-100">
+          <div className="col-3 wd-background list-group min-vh-100 wd-border-right">
             <NavigationSidebar />
           </div>
         )}
@@ -68,6 +69,7 @@ function Portfolio() {
             <Route path="/About" element={<AboutScreen />} />
             <Route path="/Education" element={<EducationScreen />} />
             <Route path="/Professional" element={<ProfExpScreen />} />
+            <Route path="/Skills" element={<SkillsScreen />} />
             <Route path="/Resume" element={<ResumeScreen />} />
             <Route path="/Contact" element={<ContactScreen />} />
           </Routes>

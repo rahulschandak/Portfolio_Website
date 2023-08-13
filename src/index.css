@@ -17,12 +17,12 @@ code {
 }
 
 .wd-background {
-  background-color: moccasin;
+  background-color: lightgrey;
   /* border-right-style: solid; */
 }
 
 .wd-background2 {
-  /* background-color: black; */
+  padding: 0;
 }
 
 .full-height-sidebar {
@@ -32,6 +32,7 @@ code {
 .full-height-content {
   flex: 1 0 auto; /* Let the content grow to fill remaining space */
   overflow-y: auto; /* If content overflows, allow scrolling */
+  padding: 0;
 }
 
 .full-height {
@@ -78,4 +79,10 @@ code {
 .wd-button-font:hover {
   color: white;
   text-decoration: none;
+}
+
+.wd-border-right {
+  color: black;
+  border-right: solid;
+  border-width: thick;
 }

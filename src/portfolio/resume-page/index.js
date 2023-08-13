@@ -9,19 +9,14 @@ const ResumeScreen = () => {
   };
 
   return (
-    <div className="container wd-background-black">
+    <div className="container h-100">
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
       <div>
         <h1 className="resume-heading">Resume</h1>
       </div>
-      <button className="wd-button-properties" onClick={openPDFInNewTab}>DOWNLOAD &nbsp; RESUME</button>
-      {/* <div className="resume-container">
-        <embed
-          src="/documents/Resume_Rahul_Chandak.pdf"
-          type="application/pdf"
-          width="100%"
-          height="800px"
-        />
-      </div> */}
+      <button className="wd-button-properties" onClick={openPDFInNewTab}>Download Resume</button>
     </div>
   );
 };

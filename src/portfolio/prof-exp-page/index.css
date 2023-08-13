@@ -7,6 +7,33 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, black 50%, white 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
 .wd-typewriter-label {
   overflow: hidden; /* Ensure that text does not overflow */
   white-space: nowrap; /* Prevent line breaks */
@@ -16,7 +43,7 @@
 .wd-background5 {
   font-family: "Times New Roman", serif;
   font-size: 18px;
-  background-color: moccasin;
+  background-color: black;
   border-radius: 20px;
 }
 
@@ -43,7 +70,7 @@
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: 2%;
-  color: white;
+  color: black;
 }
 
 .wd-job-info {
@@ -80,6 +107,7 @@
 
 .info-container {
   flex: 1 1 auto;
+  color: white;
 }
 
 .wd-width-image {
@@ -93,6 +121,16 @@
   height: 100%;
 }
 
+.wd-mobile-img-width {
+  max-width: 100;
+  height: auto;
+}
+
 .wd-background-black {
   background-color: black;
+}
+
+.wd-margin-bottom {
+  margin-bottom: 5%;
+  padding: 3%;
 }

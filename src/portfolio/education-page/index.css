@@ -1,10 +1,36 @@
-/* EducationPage.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, black 50%, white 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
 .education-heading {
   font-family: "Times New Roman", serif;
   font-size: 35px;
   font-weight: bold;
   margin-top: 15px;
-  color: white;
+  color: black;
 }
 
 .school-font {
@@ -37,13 +63,15 @@
 }
 
 .wd-background-card {
-  background-color: moccasin;
+  background-color: lightgrey;
   width: 44%;
   margin: 2%;
+  border-style: solid;
+  border-color: black;
 }
 
 .wd-background-card2 {
-  background-color: moccasin;
+  background-color: lightgrey;
   margin: 2%;
 }
 

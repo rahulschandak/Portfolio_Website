@@ -7,6 +7,33 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, black 50%, white 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
 .wd-typewriter-label {
   overflow: hidden; /* Ensure that text does not overflow */
   white-space: nowrap; /* Prevent line breaks */
@@ -19,7 +46,7 @@
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: 2%;
-  color: white;
+  color: black;
 }
 
 .resume-info {
@@ -31,9 +58,6 @@
     padding: 2%;
     border-radius: 25px;
     font-family: "Times New Roman", serif;
-    background-color: moccasin;
-}
-
-.wd-background-black {
-  background-color: black;
+    background-color: black;
+    color: white;
 }
