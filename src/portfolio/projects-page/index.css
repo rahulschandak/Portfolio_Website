@@ -1,0 +1,46 @@
+.project-heading {
+  font-family: "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: black;
+}
+
+.wd-background4 {
+  font-family: "Times New Roman", serif;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: 17px;
+}
+
+.wd-margin11 {
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+.wd-border-style {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.wd-project-title {
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wd-button-properties2 {
+    font-family: "Times New Roman", serif;
+    background-color: black;
+    color: white;
+    margin-top: 1%;
+}
+
+.wd-background4 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
