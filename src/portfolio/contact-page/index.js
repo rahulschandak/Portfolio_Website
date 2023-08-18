@@ -135,6 +135,7 @@ const ContactScreen = () => {
               <button type="submit" className="btn wd-btn-properties">
                 Send Message
               </button>
+              &nbsp; (This feature is not implemented as of now)
             </form>
           </div>
         </div>
@@ -235,6 +236,7 @@ const ContactScreen = () => {
               <button type="submit" className="btn wd-btn-properties">
                 Send Message
               </button>
+              &nbsp; (This feature is not implemented as of now)
             </form>
           </div>
         </div>
