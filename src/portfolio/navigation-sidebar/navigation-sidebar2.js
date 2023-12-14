@@ -11,7 +11,7 @@ import {
   faBook,
   faQuestionCircle,
   faPen,
-  faStar,
+  faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as Insta } from "feather-icons/dist/icons/instagram.svg";
 import { ReactComponent as Github } from "feather-icons/dist/icons/github.svg";
@@ -38,7 +38,7 @@ const NavigationSidebar2 = () => {
     { name: "Education", icon: faBook },
     { name: "Professional", icon: faBriefcase },
     { name: "Projects", icon: faPen },
-    //{ name: "Skills", icon: faStar },
+    { name: "Skills", icon: faStar },
     { name: "Resume", icon: faFile },
     { name: "Contact", icon: faContactCard },
   ];
@@ -106,6 +106,7 @@ const NavigationSidebar2 = () => {
                     } d-flex align-items-center justify-content-center w-100`}
                   >
                     <FontAwesomeIcon icon={link.icon} />
+                    {link.name}
                   </Link>
                 </div>
               ))}
@@ -120,6 +121,7 @@ const NavigationSidebar2 = () => {
                     } d-flex align-items-center justify-content-center w-100`}
                   >
                     <FontAwesomeIcon icon={link.icon} />
+                    {link.name}
                   </Link>
                 </div>
               ))}

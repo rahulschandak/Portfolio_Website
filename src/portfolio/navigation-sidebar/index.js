@@ -26,7 +26,7 @@ const NavigationSidebar = () => {
     { name: "Education", icon: faBook },
     { name: "Professional", icon: faBriefcase },
     { name: "Projects", icon: faPen },
-    // { name: "Skills", icon: faStar },
+    { name: "Skills", icon: faStar },
     { name: "Resume", icon: faFile },
     { name: "Contact", icon: faContactCard },
   ];

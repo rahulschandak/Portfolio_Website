@@ -41,6 +41,38 @@ const ProjectsScreen = () => {
               </button>
             </ul>
           </div>
+          {/* First Proj */}
+          <div className="wd-background4 wd-margin11 wd-border-style">
+            <ul className="wd-font-color">
+              <label className="wd-project-title">RateMyCoop</label> <br />
+              <label className="wd-tech-stack">
+                Axure RP 10, HCI life cycle
+              </label>
+              <br />
+              <li>
+                Designed an interactive and informative mobile application using
+                Axure RP implementing core design principles and HCI life cycle,
+                from ideation to delivery, enabling students to share their
+                internship experiences.
+              </li>
+              <li>
+                Created wireframes, conducted formative & heuristic evaluations,
+                usability tests, summative evaluations, and iterations to
+                complete the design using Axure RP 10. Results included a System
+                Usability Score of 87.5
+              </li>
+              <button className="wd-button-properties2">
+                <a
+                  className="wd-project-link"
+                  href="https://github.com/rahulschandak/RateMyCoop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Project Link
+                </a>
+              </button>
+            </ul>
+          </div>
           {/* Second Proj */}
           <div className="wd-background4 wd-margin11 wd-border-style">
             <ul className="wd-font-color">
