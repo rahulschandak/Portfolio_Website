@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
-import NavigationSidebar from "./navigation-sidebar";
-import NavigationSidebar2 from "./navigation-sidebar/navigation-sidebar2";
+import NavigationBarDesktop from "./navigation-bar";
+import NavigationBarMobile from "./navigation-bar/navigationBarMobile";
 import { Routes, Route } from "react-router";
 import EducationScreen from "./education-page";
 import AboutScreen from "./about-page";
@@ -45,14 +45,14 @@ function Portfolio() {
         {/* Left Column XL, XXL */}
         {!isMobile && (
           <div className="col-3 wd-background list-group min-vh-100 wd-border-right">
-            <NavigationSidebar />
+            <NavigationBarDesktop />
           </div>
         )}
 
-        {/* Render NavigationSidebar2 only when isMobile is true */}
+        {/* Render NavigationBarMobile only when isMobile is true */}
         {isMobile && (
           <div className="col-12 list-group">
-            <NavigationSidebar2 />
+            <NavigationBarMobile />
           </div>
         )}
 
