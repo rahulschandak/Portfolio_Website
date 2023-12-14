@@ -11,16 +11,15 @@ import {
   faBook,
   faQuestionCircle,
   faPen,
-  faStar
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as Insta } from "feather-icons/dist/icons/instagram.svg";
 import { ReactComponent as Github } from "feather-icons/dist/icons/github.svg";
 import { ReactComponent as LinkedIn } from "feather-icons/dist/icons/linkedin.svg";
 
-
 /*
-Width greater that 776 are Tablets (isMobile = false)
-Width smaller than 776 are Mobile Phones (isMobile = true).
+Width greater that 576 are Tablets (isMobile = false)
+Width smaller than 576 are Mobile Phones (isMobile = true).
 */
 const NavigationBarMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -56,11 +55,13 @@ const NavigationBarMobile = () => {
           <Link
             to={`/${link.name}`}
             className={`list-group-item text-capitalize ${
-              active === link.name ? 'active' : ''
+              active === link.name ? "active" : ""
             } d-flex align-items-center justify-content-center w-100`}
           >
-            <FontAwesomeIcon icon={link.icon} />
-            {link.name}
+            <div className="col-3 text-center wd-left-padding">
+              <FontAwesomeIcon icon={link.icon} />
+            </div>
+            <div className="col-9">{link.name}</div>
           </Link>
         </div>
       ))}
@@ -105,7 +106,7 @@ const NavigationBarMobile = () => {
         </div>
 
         {!isMobile && (
-          <div className="wd-nav-bar-md-sm wd-background2">
+          <div className="wd-background2">
             {renderLinks(0, 4)}
             {renderLinks(4, links.length)}
           </div>

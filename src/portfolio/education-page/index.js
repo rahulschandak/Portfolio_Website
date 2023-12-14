@@ -99,7 +99,6 @@ const EducationScreen = () => {
             </div>
           </div>
         )}
-        ;
         {isMobile && (
           <div className="card mb-4 wd-background-card2 wd-padding-card-image">
             <img
@@ -140,7 +139,6 @@ const EducationScreen = () => {
             </div>
           </div>
         )}
-        ;
         {isMobile && (
           <div className="card mb-4 wd-background-card2 wd-padding-card-image">
             <img
@@ -178,7 +176,6 @@ const EducationScreen = () => {
             </div>
           </div>
         )}
-        ;
       </div>
     </div>
   );

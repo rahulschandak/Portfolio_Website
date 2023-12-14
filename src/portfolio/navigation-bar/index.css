@@ -67,3 +67,7 @@
 .wd-zero-padding {
   padding: 0;
 }
+
+.wd-left-padding {
+  margin-left: 15px;
+}
