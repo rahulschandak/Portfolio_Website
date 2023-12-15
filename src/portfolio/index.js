@@ -83,7 +83,7 @@ function Portfolio() {
           <div className="popup">
             <p>
               This website is a ground-up creation, entirely designed from
-              scratch by Rahul Chandak.
+              scratch by Rahul Chandak. (View this on a desktop for the best experience).
             </p>
             <p>
               It remains an ongoing project, constantly evolving with frequent
@@ -95,8 +95,7 @@ function Portfolio() {
               </button>
             </p>
             <p>
-              Looking to connect professionally? Feel free to visit Rahul's
-              LinkedIn profile.
+              Looking to connect professionally? Drop a text on LinkedIn.
             </p>
             <button className="btn btn-primary">
               <a
