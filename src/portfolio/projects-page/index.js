@@ -4,7 +4,7 @@ import "./index.css";
 
 const ProjectsScreen = () => {
   return (
-    <div className="container h-100 d-flex  justify-content-center">
+    <div className="container h-100 d-flex justify-content-center">
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>

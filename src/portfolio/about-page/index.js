@@ -15,14 +15,14 @@ const AboutScreen = () => {
     };
   }, []);
   return (
-    <div className="container h-100 d-flex  justify-content-center">
+    <div className="container h-100 d-flex justify-content-center">
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>
 
       <div>
         <div>
-          <h1 className="about-heading wd-typewriter-label">Hello Everyone! World!👋</h1>
+          <h1 className="about-heading wd-typewriter-label">Hello World!👋</h1>
         </div>
         {!isMobile && (
           <div className="">
@@ -145,7 +145,7 @@ const AboutScreen = () => {
               <ul className="wd-fancy-bullets">
                 Future <br />
                 <li>
-                  Eagerly seeking exciting SDE internships and full time
+                  Eagerly seeking exciting and full time SDE
                   opportunities to apply my skills and passion to real-world
                   projects, making a meaningful impact on users and the digital
                   landscape.

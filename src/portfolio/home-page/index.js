@@ -45,7 +45,7 @@ const HomeScreen = () => {
       )}
 
       {isMobile && (
-        <div className="align-items-center text-center wd-margin-top">
+        <div className="text-center wd-margin-top">
           <img
             src="images/HomePic2.jpg"
             alt="ProfilePic"
