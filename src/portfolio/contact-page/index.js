@@ -177,7 +177,7 @@ const ContactScreen = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                www.linkedin.com/in/rahulschandak/
+                linkedin.com/in/rahulschandak/
               </a>
             </div>
           </div>
