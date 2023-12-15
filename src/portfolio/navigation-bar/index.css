@@ -3,7 +3,7 @@
   max-height: 100%;
 }
 
-.wd-rounded-circle {
+.wd-rounded-border {
   border-radius: 50%;
   width: 50%;
 }
@@ -70,4 +70,8 @@
 
 .wd-left-padding {
   margin-left: 15px;
+}
+
+.wd-font-mobile {
+  font-size: 15px;
 }

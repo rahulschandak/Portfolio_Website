@@ -48,20 +48,20 @@ const NavigationBarMobile = () => {
     { name: "Contact", icon: faContactCard },
   ];
 
-  const renderLinks = (start, end) => (
+  const renderLinks = (start, end, font_size) => (
     <div className="row">
       {links.slice(start, end).map((link) => (
         <div className="col wd-zero-padding" key={link.name}>
           <Link
             to={`/${link.name}`}
-            className={`list-group-item text-capitalize ${
+            className={`list-group-item wd-zero-padding ${
               active === link.name ? "active" : ""
-            } d-flex align-items-center justify-content-center w-100`}
+            } d-flex`}
           >
-            <div className="col-3 text-center wd-left-padding">
+            <div className={`col-3 text-center wd-left-padding ${font_size}`}>
               <FontAwesomeIcon icon={link.icon} />
             </div>
-            <div className="col-9">{link.name}</div>
+            <div className={`col-9 ${font_size}`}>{link.name}</div>
           </Link>
         </div>
       ))}
@@ -114,10 +114,10 @@ const NavigationBarMobile = () => {
 
         {isMobile && (
           <div className="wd-background2">
-            {renderLinks(0, 2)}
-            {renderLinks(2, 4)}
-            {renderLinks(4, 6)}
-            {renderLinks(6, links.length)}
+            {renderLinks(0, 2, "wd-font-mobile")}
+            {renderLinks(2, 4, "wd-font-mobile")}
+            {renderLinks(4, 6, "wd-font-mobile")}
+            {renderLinks(6, links.length, "wd-font-mobile")}
           </div>
         )}
       </div>

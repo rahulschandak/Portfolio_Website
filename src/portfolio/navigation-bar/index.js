@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
+
 import {
   faHouse,
   faContactCard,
@@ -37,7 +38,7 @@ const NavigationSidebar = () => {
           <img
             src="images/ProfilePic.jpeg"
             alt="ProfilePic"
-            className="wd-centered-image wd-rounded-circle"
+            className="wd-centered-image wd-rounded-border"
           />
         </div>
 

@@ -73,12 +73,6 @@ h4 {
   gap: 20px; /* Optional: To add some spacing between the image and text */
 }
 
-.wd-home-pic {
-  border-style: solid;
-  border-color: black;
-  border-width: 15px;
-}
-
 .wd-padding-right {
   padding-right: 20px;
 }
@@ -88,23 +82,65 @@ h4 {
   padding-right: 20px;
 }
 
-.wd-span1 {
+.wd-span1-desktop {
   font-size: 30px;
   font-family: ui-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
 }
 
-.wd-span2 {
+.wd-span2-desktop {
   font-size: 60px;
   font-family: ui-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
 }
 
-.wd-span3 {
+.wd-span3-desktop {
   font-size: 20px;
   font-family: ui-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bolder;
+}
+
+.wd-span1-mobile {
+  font-size: 30px;
+  font-family: ui-serif;
+  align-items: center;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+
+.wd-span2-mobile {
+  font-size: 40px;
+  font-family: ui-serif;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+
+.wd-span3-mobile {
+  font-size: 20px;
+  font-family: ui-serif;
+  /* text-transform: uppercase; */
+  font-weight: bolder;
+}
+
+.wd-margin-top {
+  margin-top: 20px;
+}
+
+.wd-rounded-circle {
+  border-radius: 50%;
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 15px;
+}
+
+.wd-rounded-circle-mobile {
+  border-radius: 50%;
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
 }

@@ -44,7 +44,7 @@ const SkillsProgLang = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
+
   return (
     <section id="teams" className="block teams-block">
       <h1 className="wd-sub-heading">Programming Languages</h1>
@@ -67,7 +67,7 @@ const SkillsProgLang = () => {
         </Container>
       )}
 
-{isMobile && (
+      {isMobile && (
         <Container fluid>
           <Row>
             {skillsData.map((skills) => {
@@ -87,8 +87,6 @@ const SkillsProgLang = () => {
       )}
     </section>
   );
-}
-
-
+};
 
 export default SkillsProgLang;

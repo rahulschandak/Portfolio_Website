@@ -22,7 +22,7 @@ const AboutScreen = () => {
 
       <div>
         <div>
-          <h1 className="about-heading wd-typewriter-label">Hello World!👋</h1>
+          <h1 className="about-heading wd-typewriter-label">Hello Everyone! World!👋</h1>
         </div>
         {!isMobile && (
           <div className="">
