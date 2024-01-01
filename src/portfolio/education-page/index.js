@@ -45,7 +45,7 @@ const EducationScreen = () => {
                   <br />
                   <strong>Location:</strong> Boston, USA
                   <br />
-                  <strong>GPA:</strong> 3.87/ 4.0
+                  <strong>GPA:</strong> 3.91/ 4.0
                   <br />
                   <br />
                 </label>
